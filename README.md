@@ -17,13 +17,13 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Screenshot
 
-![](./screenshot.jpg)
-![](./screenshot.jpg)
+![](./screenshot_desktop.jpeg)
+![](./screenshot_mobile.jpeg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/graficdoctor/fe-20-advice-generator-app)
+- Live Site URL: [Vercel](https://fe-20-advice-generator-app.vercel.app/)
 
 ## My process
 
