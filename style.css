@@ -1,0 +1,89 @@
+/* Root */
+:root {
+  --clr-accent-500: hsl(150, 100%, 66%);
+  --clr-accent-100: hsl(193, 38%, 86%);
+
+  --clr-neutral-100: hsl(218, 23%, 16%);
+  --clr-neutral-300: hsl(217, 19%, 24%);
+  --clr-neutral-500: hsl(217, 19%, 38%);
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  color: var(--clr-accent-100);
+  background-color: var(--clr-neutral-100);
+}
+
+svg {
+  max-width: 100%;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Typography */
+.advice-number {
+  text-transform: uppercase;
+  color: var(--clr-accent-500);
+  font-size: clamp(0.69rem, calc(0.64rem + 0.24vw), 0.81rem);
+  letter-spacing: 3.5px;
+  margin-bottom: 1.5em;
+}
+
+.advice-text {
+  font-size: clamp(1.5rem, calc(1.4rem + 0.49vw), 1.75rem);
+  letter-spacing: 0.6px;
+  line-height: 1.3;
+  margin-bottom: 1.5em;
+}
+
+/* General Classes */
+.container {
+  width: min(100% - 2rem, 33.75rem);
+  margin-inline: auto;
+  background-color: var(--clr-neutral-300);
+  padding: 2.5em 1.5em 4em 1.5em;
+  border-radius: 10px;
+  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--clr-accent-500);
+  border: none;
+  cursor: pointer;
+  transition: box-shadow ease-in-out 1ms;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0px 0px 30px 10px var(--clr-accent-500);
+}
+
+.btn:active {
+  box-shadow: 0px 0px 30px 10px var(--clr-neutral-100);
+}
