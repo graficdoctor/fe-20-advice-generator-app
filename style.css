@@ -79,8 +79,7 @@ img {
   transform: translate(-50%, 50%);
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover {
   box-shadow: 0px 0px 30px 10px var(--clr-accent-500);
 }
 

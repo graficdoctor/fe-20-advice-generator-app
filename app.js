@@ -9,7 +9,7 @@ adviceBtn.addEventListener('click', function () {
 });
 
 function generateQuote() {
-  fetch('https://api.adviceslip.com/advice')
+  fetch('https://api.adviceslip.com/advice', { cache: 'no-cache' })
     .then((response) => response.json())
     .then((data) => {
       adviceId.innerText = data.slip.id;
